@@ -15,7 +15,7 @@ for i, in_str in enumerate(in_str_list):
                 tmp_list.append(wd)
         datalist = copy.copy(tmp_list)
         tmp_list.clear()
-    if re.match("[a-z]", in_str):
+    elif re.match("[a-z]", in_str):
         for wd in datalist:
             if in_str.lower() in wd:
                 tmp_list.append(wd)
