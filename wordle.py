@@ -3,7 +3,7 @@ import copy
 
 tmp_list = []
 
-f = open('WORDLE.csv', 'r')
+f = open('wordle.txt', 'r')
 datalist = f.read().splitlines()
 
 in_str_list = list(input())
