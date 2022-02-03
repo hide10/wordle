@@ -24,6 +24,7 @@ for i, in_str in enumerate(in_str_list):
         datalist = copy.copy(tmp_list)
         tmp_list.clear()
 
+print()
 print("not in any spot:")
 
 in_str_list = list(input())
@@ -33,6 +34,9 @@ for i, in_str in enumerate(in_str_list):
             tmp_list.append(wd)
     datalist = copy.copy(tmp_list)
     tmp_list.clear()
+
+print()
+print("Possible words:")
 
 for str in datalist:
     print(str)
