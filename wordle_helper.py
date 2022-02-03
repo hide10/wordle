@@ -3,7 +3,7 @@ import copy
 
 tmp_list = []
 
-f = open('wordle.txt', 'r')
+f = open('wordle_la.txt', 'r')
 datalist = f.read().splitlines()
 
 print("correct and wrong:")
