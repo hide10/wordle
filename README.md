@@ -2,21 +2,22 @@
 
 ## 使い方
 
-* 起動すると入力待ち
-* 位置確定済みの文字は大文字、位置未確定の文字は小文字、それ以外はアルファベット以外を入力
-* 該当する単語がリストアップされる
+* 起動すると最初に"correct and wrong:"の入力待ちになる
+  * 位置確定済みの文字は大文字、位置未確定の文字は小文字、それ以外はアルファベット以外を入力
+* 続いて"not in any spot:"
+  * 使用されない文字列を入力
+* 可能性のある単語がリストアップされる
 
 ## 使用例
 
 ```sh
-> python -u wordle.py
-AB..i
-abaci
-abide
-abies
-aboil
-abrim
-abrin
-abris
-absit
-```
+> python wordle.py
+correct and wrong:
+SrAd
+
+not in any spot:
+pnkmilkyzoeu
+
+Possible words:
+shard
+sward```
