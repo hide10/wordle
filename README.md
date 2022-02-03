@@ -11,7 +11,7 @@
 ## 使用例
 
 ```sh
-> python wordle.py
+> python wordle_helper.py
 correct and wrong:
 SrAd
 
