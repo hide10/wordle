@@ -26,3 +26,10 @@ Possible words: OUGHT
 correct and wrong:
 not in any spot: 
 ```
+
+## 当てられない単語
+
+".ATCH"は7単語あるので、このヘルパーでは当たらないことがあります。
+".AUNT"も6単語あるので、このヘルパーでは当たらないことがあります。
+
+以上
