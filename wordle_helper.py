@@ -6,18 +6,16 @@ tmp_list = []
 frq_str = "earotlisncuydhpmgbfkwvzxqj"
 frq_lists = list(frq_str)
 
-f = open('wordle_la.txt', 'r')
-
-datalist = f.read().splitlines()
-tmp_list.clear()
 
 while True:
-    print("correct and wrong:")
+    f = open('wordle_la.txt', 'r')
+    datalist = f.read().splitlines()
+    tmp_list.clear()
+
+    print("correct and wrong: ", end='')
     correct_str_list = list(input())
 
-    print()
-
-    print("not in any spot:")
+    print("not in any spot: ", end='')
     not_in_str_list = list(input())
 
     if not correct_str_list and not not_in_str_list:
@@ -44,8 +42,7 @@ while True:
         datalist = copy.copy(tmp_list)
         tmp_list.clear()
 
-    print()
-    print("Possible words:")
+    print("Possible words: ", end='')
     possible_list = copy.copy(datalist)
     tmp_list.clear()
 
@@ -60,15 +57,14 @@ while True:
 
             possible_list = copy.copy(tmp_list)
 
-            if len(tmp_list) > 6:
-                not_in_str_list.append(frq)
-                tmp_list.clear()
-                continue
-            elif len(tmp_list) > 0:
+            if len(tmp_list) > 0:
                 break
             else:
                 possible_list = copy.copy(datalist)
 
-    [print(possible) for possible in possible_list]
+    if len(possible_list):
+        print(possible_list[0].upper())
+    else:
+        print("The word does not exist.")
 
     print()
