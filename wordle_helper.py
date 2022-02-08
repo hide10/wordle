@@ -39,7 +39,7 @@ while True:
 
     for i, in_str in enumerate(not_in_str_list):
         for wd in datalist:
-            if not in_str.lower() in wd:
+            if in_str.lower() not in wd or in_str.lower() in correct_str_list or in_str.upper() in correct_str_list:
                 tmp_list.append(wd)
         datalist = copy.copy(tmp_list)
         tmp_list.clear()
