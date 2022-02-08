@@ -14,6 +14,9 @@ while True:
 
     print("correct and wrong: ", end='')
     correct_str_list = list(input())
+    if len(correct_str_list) > 5:
+        print("Error: The input is more than 5 characters.")
+        continue
 
     print("not in any spot: ", end='')
     not_in_str_list = list(input())
