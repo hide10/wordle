@@ -65,9 +65,9 @@ while True:
             else:
                 possible_list = copy.copy(datalist)
 
-    if len(possible_list):
-        print(possible_list[0].upper())
-    else:
-        print("The word does not exist.")
+    for i in range(len(possible_list)):
+        print(possible_list[i].upper() + ",", end='')
+        if i > 1:
+            break
 
     print()
