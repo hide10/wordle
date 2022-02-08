@@ -1,6 +1,6 @@
 counter = [0] * 26
 
-f = open('wordle.txt', 'r')
+f = open('wordle_la.txt', 'r')
 
 lines = f.readlines()
 for line in lines:
