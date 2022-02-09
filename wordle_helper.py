@@ -60,9 +60,10 @@ while True:
 
             possible_list = copy.copy(tmp_list)
 
-            if len(tmp_list) > 0:
+            if len(tmp_list) > 1:
                 break
             else:
+                possible_list.clear()
                 possible_list = copy.copy(datalist)
 
     for i in range(len(possible_list)):
