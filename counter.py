@@ -1,11 +1,8 @@
-counter = [0] * 26
+import collections
+import pprint
 
 f = open('wordle_la.txt', 'r')
 
-lines = f.readlines()
-for line in lines:
-    for i in range(26):
-        counter[i] += line.count(chr(97+i))
-
-for i in range(26):
-    print(chr(97+i), counter[i])
+contents = f.read()
+count = collections.Counter(contents)
+pprint.pprint(count.most_common())
