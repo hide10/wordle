@@ -11,7 +11,8 @@
 
 ## 使用例
 
-wordleの一番最初の入力は ALERT がお薦めです。
+* wordleの一番最初の入力は LATER がお薦めです。
+  * 次点で ALERT がお薦めです。
 
 ```sh
 > python wordle_helper.py"
