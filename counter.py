@@ -7,12 +7,12 @@ third_char = [0] * 26
 forth_char = [0] * 26
 Fifth_char = [0] * 26
 
-with open('wordle_la.txt', 'r') as f:
+with open('wordle_ma.txt', 'r') as f:
     contents = f.read()
     count = collections.Counter(contents)
     pprint.pprint(count.most_common())
 
-with open('wordle_la.txt', 'r') as f:
+with open('wordle_ma.txt', 'r') as f:
     for line in f:
         for i in range(26):
             fst_char[i] += line[0].count(chr(ord('a')+i))

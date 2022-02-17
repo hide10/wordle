@@ -8,7 +8,7 @@ frq_lists = list(frq_str)
 
 
 while True:
-    f = open('wordle_la.txt', 'r')
+    f = open('wordle_ma.txt', 'r')
     datalist = f.read().splitlines()
     tmp_list.clear()
 
